@@ -11,7 +11,7 @@
     tm* local_time = localtime(&current_time);
     int hours = local_time->tm_hour;
  */
-int Clock::get_hours(){
+int Clock::get_hours() const{
     return 0;
 }
 
@@ -22,7 +22,7 @@ int Clock::get_hours(){
     tm* local_time = localtime(&current_time);
     int minutes = local_time->tm_min;
  */
-int Clock::get_minutes(){
+int Clock::get_minutes() const{
     return 0;
 }
 

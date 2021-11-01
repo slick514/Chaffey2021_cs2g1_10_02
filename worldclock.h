@@ -19,7 +19,7 @@ public:
      *
      * @return the time (hours) adjusted for the given time_offset
      */
-    virtual int get_hours();
+    virtual int get_hours() const override;
 
 private:
     int time_offset;

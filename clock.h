@@ -16,21 +16,21 @@ class Clock
 public:
 
     /**
-     * @return a string with the hours and minutes
+     * @return a string with the hours and minutes, representing the time
      */
-    std::string get_time();
+    virtual std::string get_time();
 
     /**
      *
      * @return the current time (minutes after the hour) at this location
      */
-    virtual int get_hours();
+    virtual int get_hours() const;
 
     /**
      *
      * @return the current time (hours) at this location
      */
-    int get_minutes();
+    int get_minutes() const;
 };
 
 
