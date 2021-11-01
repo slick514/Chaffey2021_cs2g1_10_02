@@ -1,0 +1,2 @@
+language = "cpp"
+run = "g++ *.cpp -o 10_02.exe && ./10_02.exe"
