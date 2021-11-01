@@ -24,13 +24,13 @@ public:
      *
      * @return the current time (minutes after the hour) at this location
      */
-    static int get_hours();
+    virtual int get_hours();
 
     /**
      *
      * @return the current time (hours) at this location
      */
-    static int get_minutes();
+    int get_minutes();
 };
 
 

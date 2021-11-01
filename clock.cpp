@@ -10,7 +10,6 @@
     time_t current_time = time(0);
     tm* local_time = localtime(&current_time);
     int hours = local_time->tm_hour;
-    int minutes = local_time->tm_min;
  */
 int Clock::get_hours(){
     return 0;
@@ -21,7 +20,6 @@ int Clock::get_hours(){
     To get the current time, use the following code, which requires that you include the <ctime> header:
     time_t current_time = time(0);
     tm* local_time = localtime(&current_time);
-    int hours = local_time->tm_hour;
     int minutes = local_time->tm_min;
  */
 int Clock::get_minutes(){
