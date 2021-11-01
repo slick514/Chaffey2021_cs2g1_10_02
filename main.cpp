@@ -55,17 +55,18 @@ public:
 
     void setAlarmClock(int, int, int);
 
-    AlarmClock getAlarmClock() const
-    {
+    AlarmClock getAlarmClock() const;
+};
+
+
+AlarmClock AlarmClock::getAlarmClock() const {
         AlarmClock result;
         result.alarmHours = alarmHours;
         result.alarmMinutes = alarmMinutes;
         result.alarmSeconds = alarmSeconds;
 
         return result;
-    }
-};
-
+}
 void AlarmClock::setAlarmClock(int hr, int min, int sec)
 {
     alarmHours = hr;
