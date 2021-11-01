@@ -7,7 +7,7 @@
 
 #include "clock.h"
 
-class WorldClock : Clock {
+class WorldClock : public Clock {
 public:
     /**
      * Accept an offset that will impact the "hours" that are returned, dependent on time-zone.

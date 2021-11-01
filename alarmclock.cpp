@@ -4,19 +4,9 @@
 
 #include "alarmclock.h"
 
-void AlarmClock::setAlarmClock(int hr, int min, int sec)
-{
+void AlarmClock::set_alarm(int hr, int min){
     alarmHours = hr;
     alarmMinutes = min;
-    alarmSeconds = sec;
 }
 
-AlarmClock::AlarmClock(int hr, int min, int sec)
-: Clock{hr, min, sec}
-{
-}
 
-AlarmClock::AlarmClock()
- : Clock{0, 0, 0}
-{
-}

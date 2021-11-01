@@ -8,16 +8,13 @@
 
 #include "clock.h"
 
-class AlarmClock : public Clock
-{
+class AlarmClock : public Clock{
+public:
+    void set_alarm(int hours, int minutes);
 private:
     int alarmHours;
     int alarmMinutes;
     int alarmSeconds;
-public:
-    AlarmClock();
-    AlarmClock(int hr, int min, int sec);
-    void setAlarmClock(int hours, int minutes, int seconds);
 };
 
 
